@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:gravity="center"
+    android:paddingHorizontal="@dimen/dp_4x"
+    tools:context=".auth.register.presentation.RegistrationFragment">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/registration"
+        style="@style/TitleTextStyle"
+        android:textColor="@color/black"/>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/nameEditTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_3x"
+        android:hint="@string/name"
+        android:inputType="text"
+        style="@style/EditTextStyle"/>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/emailEditTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_1x"
+        android:drawableStart="@drawable/ic_email"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress"
+        style="@style/EditTextStyle"/>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/passwordEditTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_1x"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        style="@style/EditTextStyle"/>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/repeatPasswordEditTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_1x"
+        android:hint="@string/repeat_your_password"
+        android:inputType="textPassword"
+        style="@style/EditTextStyle"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/registerBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/ButtonStyle"
+        android:text="@string/register"
+        android:layout_marginTop="@dimen/dp_4x"
+        android:backgroundTint="@color/dark_blue"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_2x"
+        android:text="@string/already_have_an_account"
+        android:textSize="12sp"
+        android:textColor="@color/hint_color"/>
+
+    <TextView
+        android:id="@+id/loginTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/login"
+        style="@style/AdditionalTextStyle"/>
+
+
+</LinearLayout>

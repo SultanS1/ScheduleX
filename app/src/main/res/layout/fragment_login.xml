@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:gravity="center"
+    android:paddingHorizontal="@dimen/dp_4x"
+    tools:context=".auth.login.presentation.LoginFragment">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logo_login"
+        android:layout_marginBottom="@dimen/dp_3x"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/login"
+        style="@style/TitleTextStyle"
+        android:textColor="@color/black"/>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/emailEditTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_3x"
+        android:drawableStart="@drawable/ic_email"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress"
+        style="@style/EditTextStyle"/>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/passwordEditTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_1x"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        style="@style/EditTextStyle"/>
+
+    <TextView
+        android:id="@+id/forgotPassTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_1x"
+        android:text="@string/forgot_password"
+        style="@style/AdditionalTextStyle" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/loginBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/ButtonStyle"
+        android:text="@string/login"
+        android:layout_marginTop="@dimen/dp_4x"
+        android:backgroundTint="@color/dark_blue"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp_1x"
+        android:text="@string/or"
+        style="@style/AdditionalTextStyle" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/loginWithGoogleBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/ButtonStyle"
+        android:text="@string/login_with_google"
+        android:backgroundTint="@color/hint_color"
+        android:drawableLeft="@drawable/logo_google"/>
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_2x"
+        android:text="@string/need_an_account"
+        android:textSize="12sp"
+        android:textColor="@color/hint_color"/>
+
+    <TextView
+        android:id="@+id/registerTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/register"
+        style="@style/AdditionalTextStyle"/>
+
+
+</LinearLayout>
