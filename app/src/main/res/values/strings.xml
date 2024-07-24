@@ -14,4 +14,12 @@
     <string name="registration">Registration</string>
     <string name="name">Name</string>
     <string name="repeat_your_password">Repeat your password</string>
+    <string name="good_morning">Good morning))</string>
+    <string name="isro_abdillah">Isro Abdillah</string>
+    <string name="monday">Monday</string>
+    <string name="due_date">Due Date</string>
+    <string name="_10_oktober_2022">10 Oktober, 2022</string>
+    <string name="today_there_are_two_lectures">Today there are two lectures.</string>
+    <string name="today_s_classes">Today\'s Classes</string>
+    <string name="check_another_schedule">Check another schedule</string>
 </resources>

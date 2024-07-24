@@ -22,7 +22,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/login"
-        style="@style/TitleTextStyle"
+        style="@style/Text1Style"
         android:textColor="@color/black"/>
 
     <com.google.android.material.textfield.TextInputEditText
@@ -50,7 +50,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/dp_1x"
         android:text="@string/forgot_password"
-        style="@style/AdditionalTextStyle" />
+        android:textColor="@color/dark_blue"
+        style="@style/Text5Style" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/loginBtn"
@@ -66,7 +67,8 @@
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/dp_1x"
         android:text="@string/or"
-        style="@style/AdditionalTextStyle" />
+        android:textColor="@color/dark_blue"
+        style="@style/Text5Style" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/loginWithGoogleBtn"
@@ -90,7 +92,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/register"
-        style="@style/AdditionalTextStyle"/>
+        android:textColor="@color/dark_blue"
+        style="@style/Text5Style"/>
 
 
 </LinearLayout>
