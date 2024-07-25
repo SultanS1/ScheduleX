@@ -15,21 +15,28 @@
         <item name="android:textStyle">bold</item>
     </style>
 
-    <!-- Title small text style -->
-    <style name="Text3Style">
+    <!-- Text3 bold style -->
+    <style name="Text3BoldStyle">
         <item name="android:textSize">16sp</item>
         <item name="textAllCaps">false</item>
         <item name="android:textStyle">bold</item>
     </style>
 
-    <!-- Text3 style -->
+    <!-- Text3 normal style -->
+    <style name="Text3Style">
+        <item name="android:textSize">16sp</item>
+        <item name="textAllCaps">false</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <!-- Text4 normal style -->
     <style name="Text4Style">
         <item name="android:textSize">14sp</item>
         <item name="textAllCaps">false</item>
         <item name="android:textStyle">normal</item>
     </style>
 
-    <!-- Text3 bold style -->
+    <!-- Text4 bold style -->
     <style name="Text4BoldStyle">
         <item name="android:textSize">14sp</item>
         <item name="textAllCaps">false</item>
