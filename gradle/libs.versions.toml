@@ -11,6 +11,8 @@ activity = "1.9.1"
 constraintlayout = "2.1.4"
 navigationFragmentKtx = "2.7.3"
 navigationUiKtx = "2.7.3"
+bindingDelegateVersion = "1.5.9"
+
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -23,6 +25,9 @@ material = { group = "com.google.android.material", name = "material", version.r
 androidx-activity = { group = "androidx.activity", name = "activity", version.ref = "activity" }
 androidx-constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
 navigation-ui-ktx = { module = "androidx.navigation:navigation-ui-ktx", version.ref = "navigationUiKtx" }
+
+viewBindingDelegate = { module = "com.github.kirich1409:viewbindingpropertydelegate-full", version.ref = "bindingDelegateVersion"}
+
 
 [plugins]
 androidApplication = { id = "com.android.application", version.ref = "agp" }

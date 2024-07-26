@@ -50,7 +50,7 @@
         <item name="android:textStyle">bold</item>
     </style>
 
-    <!--  Text5 text -->
+    <!--  Text6 text -->
     <style name="Text6Style">
         <item name="android:textSize">11sp</item>
         <item name="textAllCaps">false</item>
