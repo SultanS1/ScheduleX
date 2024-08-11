@@ -52,6 +52,7 @@
     <androidx.coordinatorlayout.widget.CoordinatorLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
+        android:layout_marginTop="@dimen/dp_1x"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -74,6 +75,7 @@
                     android:layout_height="wrap_content"
                     android:background="@drawable/rounded_corner"
                     android:backgroundTint="@color/dark_blue"
+                    android:elevation="@dimen/_2dp"
                     android:layout_marginVertical="@dimen/dp_4x"
                     android:paddingHorizontal="@dimen/dp_3x"
                     android:paddingVertical="@dimen/dp_2x">
@@ -110,7 +112,7 @@
                         app:layout_constraintTop_toBottomOf="@+id/currentDate" />
 
                     <com.google.android.material.button.MaterialButton
-                        android:id="@+id/todaysLecutresAre"
+                        android:id="@+id/todaysTasksAre"
                         style="@style/Text5Style"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -183,16 +185,17 @@
                 <androidx.recyclerview.widget.RecyclerView
                     android:id="@+id/tasksRv"
                     android:layout_width="match_parent"
-                    android:layout_height="0dp"
+                    android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/dp_3x"
                     android:background="@drawable/rounded_corner"
                     android:paddingHorizontal="@dimen/dp_3x"
-                    android:paddingVertical="@dimen/dp_2x"
-                    android:layout_marginBottom="80dp"
+                    android:paddingBottom="@dimen/dp_2x"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/todaysClassesTitle" />
+                    app:layout_constraintTop_toBottomOf="@+id/todaysClassesTitle"
+                    app:layout_constraintVertical_bias="0.0" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 

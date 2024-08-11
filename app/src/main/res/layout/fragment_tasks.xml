@@ -52,6 +52,7 @@
     <androidx.coordinatorlayout.widget.CoordinatorLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
+        android:layout_marginTop="@dimen/dp_1x"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -66,7 +67,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fillViewport="true"
-                app:layout_scrollFlags="scroll|enterAlwaysCollapsed">
+                app:layout_scrollFlags="scroll|exitUntilCollapsed">
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:id="@+id/constraintLayout"
@@ -171,168 +172,22 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
-                <TextView
-                    android:id="@+id/mondayTxt"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/dp_3x"
-                    android:text="@string/monday"
-                    style="@style/Text2Style"
-                    android:textColor="@color/e87a30"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
-
-                <androidx.recyclerview.widget.RecyclerView
-                    android:id="@+id/mondayRv"
+                <com.google.android.material.tabs.TabLayout
+                    android:id="@+id/tabLayout"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/dp_3x"
-                    android:background="@drawable/rounded_corner"
-                    android:paddingHorizontal="@dimen/dp_3x"
-                    android:paddingVertical="@dimen/dp_2x"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/mondayTxt" />
+                    app:layout_constraintTop_toTopOf="parent" />
 
-                <TextView
-                    android:id="@+id/tuesdayTxt"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/dp_3x"
-                    android:text="@string/tuesday"
-                    style="@style/Text2Style"
-                    android:textColor="@color/e87a30"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/mondayRv" />
-
-                <androidx.recyclerview.widget.RecyclerView
-                    android:id="@+id/tuesdayRv"
+                <androidx.viewpager2.widget.ViewPager2
+                    android:id="@+id/viewPager"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/dp_3x"
-                    android:background="@drawable/rounded_corner"
-                    android:paddingHorizontal="@dimen/dp_3x"
-                    android:paddingVertical="@dimen/dp_2x"
+                    android:layout_height="0dp"
+                    app:layout_constraintTop_toBottomOf="@id/tabLayout"
+                    app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/tuesdayTxt" />
-
-                <TextView
-                    android:id="@+id/wednesdayTxt"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/dp_3x"
-                    android:text="@string/wednesday"
-                    style="@style/Text2Style"
-                    android:textColor="@color/e87a30"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/tuesdayRv" />
-
-                <androidx.recyclerview.widget.RecyclerView
-                    android:id="@+id/wednesdayRv"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/dp_3x"
-                    android:background="@drawable/rounded_corner"
-                    android:paddingHorizontal="@dimen/dp_3x"
-                    android:paddingVertical="@dimen/dp_2x"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/wednesdayTxt" />
-
-                <TextView
-                    android:id="@+id/thursdayTxt"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/dp_3x"
-                    android:text="@string/thursday"
-                    style="@style/Text2Style"
-                    android:textColor="@color/e87a30"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/wednesdayRv" />
-
-                <androidx.recyclerview.widget.RecyclerView
-                    android:id="@+id/thursdayRv"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/dp_3x"
-                    android:background="@drawable/rounded_corner"
-                    android:paddingHorizontal="@dimen/dp_3x"
-                    android:paddingVertical="@dimen/dp_2x"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/thursdayTxt" />
-
-                <TextView
-                    android:id="@+id/fridayTxt"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/dp_3x"
-                    android:text="@string/friday"
-                    style="@style/Text2Style"
-                    android:textColor="@color/e87a30"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/thursdayRv" />
-
-                <androidx.recyclerview.widget.RecyclerView
-                    android:id="@+id/fridayRv"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/dp_3x"
-                    android:background="@drawable/rounded_corner"
-                    android:paddingHorizontal="@dimen/dp_3x"
-                    android:paddingVertical="@dimen/dp_2x"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/fridayTxt" />
-
-                <TextView
-                    android:id="@+id/saturdayTxt"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/dp_3x"
-                    android:text="@string/saturday"
-                    style="@style/Text2Style"
-                    android:textColor="@color/e87a30"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/fridayRv" />
-
-                <androidx.recyclerview.widget.RecyclerView
-                    android:id="@+id/saturdayRv"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/dp_3x"
-                    android:background="@drawable/rounded_corner"
-                    android:paddingHorizontal="@dimen/dp_3x"
-                    android:paddingVertical="@dimen/dp_2x"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/saturdayTxt" />
-
-                <TextView
-                    android:id="@+id/sundayTxt"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/dp_3x"
-                    android:text="@string/sunday"
-                    style="@style/Text2Style"
-                    android:textColor="@color/e87a30"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/saturdayRv" />
-
-                <androidx.recyclerview.widget.RecyclerView
-                    android:id="@+id/sundayRv"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/dp_3x"
-                    android:background="@drawable/rounded_corner"
-                    android:paddingHorizontal="@dimen/dp_3x"
-                    android:paddingVertical="@dimen/dp_2x"
-                    android:layout_marginBottom="80dp"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/sundayTxt" />
+                    app:layout_constraintBottom_toBottomOf="parent"/>
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
